@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <script>        
+                function media(){
+                    var count = 0;
+                    var argumentsLenght = arguments.length;
+                    var total = 0;
+                    
+                    //while(typeof arguments[x] === 'number')
+                    while(count < argumentsLenght){
+                        total += arguments[count];
+                        count++;
+                    }
+                    return (total/argumentsLenght)
+                }
+                
+                var media1 = media(2,4)
+                var media2 = media(1,1,2,3,5);
+                console.log('result: ', media1);
+                console.log('result: ', media2);
+        </script>
+    </head>
+</html>
